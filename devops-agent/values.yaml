@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: <ACR Name>.azurecr.io/azdevopsagent
-  tag: <Image Tag name>
+  repository: evopsacr12.azurecr.io/dockeragent
+  tag: latest
   pullPolicy: Always
 
 imagePullSecrets: []
@@ -14,10 +14,10 @@ nameOverride: ""
 fullnameOverride: ""
 
 azdevops:
-  azpUrl: "https://dev.azure.com/org-name"
-  azpToken: "<Azure DevOps PAT Token"
-  azpPool: "AKS-Agent-Pool"
-  azpAgentName: "AKS-Agent"
+  azpUrl: "https://dev.azure.com/DeepalakshmiKarthikeyan"
+  azpToken: "fcpxvkoykwmv3njq3zyhkvoj55ltnln63tpl25twu3vnu4dr6l5a"
+  azpPool: "AKS-AGENT-TEST"
+  azpAgentName: "AKS-DevOps-Agent"
 
 service:
   type: ClusterIP
