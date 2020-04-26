@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: evopsacr12.azurecr.io/dockeragent
+  repository: devopsacr12.azurecr.io/dockeragent
   tag: latest
   pullPolicy: Always
 
