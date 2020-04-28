@@ -5,11 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: devopsacr12.azurecr.io/dockeragent
-  tag: latest
+  repository: acrpltsrv.azurecr.io/dockeragent
+  tag: latest-devopsagent
   pullPolicy: Always
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: platform-acr
 nameOverride: ""
 fullnameOverride: ""
 
